@@ -1,0 +1,8 @@
+#/bin/bash
+if [[ "$1" == 0 ]]; then
+	osascript -e 'display notification "Microphone Muted" with title "Zoom Gate"'
+fi
+if [[ "$1" == 1 ]]; then
+	osascript -e 'display notification "Microphone Un-Muted" with title "Zoom Gate"'
+fi
+exit

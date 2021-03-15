@@ -4,7 +4,7 @@ A Mixer for Zoom, built in MaxMSP, and intended to be used with Loopback or Soun
 Currently development is only for MacOS (though feel free to try it on other platforms!)
 
 ## Relies on:
- [Jeremy Bernstein's Shell External MAX/MSP Object](https://github.com/jeremybernstein/shell)
+ [Jeremy Bernstein's Shell External MAX/MSP Object](https://github.com/jeremybernstein/shell) (FOR BUILDING FROM SOURCE ONLY)
 and either [Rogue Amoeba's Loopback](https://rogueamoeba.com/loopback/) or [Matt Ingalls' Soundflower](https://github.com/mattingalls/Soundflower)
 
 ## A note about Virtual Devices

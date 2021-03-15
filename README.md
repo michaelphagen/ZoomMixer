@@ -4,7 +4,7 @@ A Mixer for Zoom, built in MaxMSP, and intended to be used with Loopback or Soun
 Currently development is only for MacOS (though feel free to try it on other platforms!)
 
 ## Relies on:
- [Jeremy Bernstein's Shell External MAX/MSP Object](https://github.com/jeremybernstein/shell) (FOR BUILDING FROM SOURCE ONLY)
+ [Jeremy Bernstein's Shell External MAX/MSP Object](https://github.com/jeremybernstein/shell) (if building from source)
 and either [Rogue Amoeba's Loopback](https://rogueamoeba.com/loopback/) or [Matt Ingalls' Soundflower](https://github.com/mattingalls/Soundflower)
 
 ## A note about Virtual Devices
@@ -19,4 +19,5 @@ The "To Mixer" Device should consist of Microphone followed by Loopback/Soundflo
 The "From Mixer" Device should just be a loopback/soundflower device, as a 2 channel virtual audio device
 
 Application/System audio should be routed to the "To Mixer" Device (unless using the workaround explained in the [note about virtual devices here](##-A-note-about-Virtual-Devices))
+
 Zoom Audio Input should be set to "From Mixer" and Zoom's Audio Output should be set to whatever source you want the other participant's audio to come from (This can be different from the output that your computer sound is coming from, if you want!)

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 413.0, 288.0, 326.0, 305.0 ],
+		"rect" : [ 1140.0, 319.0, 326.0, 305.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2155,7 +2155,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 84.0, 129.0, 640.0, 480.0 ],
+										"rect" : [ 84.0, 129.0, 873.0, 764.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2185,6 +2185,44 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-14",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 32.0, 183.0, 79.0, 35.0 ],
+													"text" : "\"Microphone Un-Muted\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-10",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 124.0, 183.0, 78.0, 35.0 ],
+													"text" : "\"Microphone Muted\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-6",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 267.0, 391.0, 22.0 ],
+													"text" : "sprintf '/Applications/Zoom Mixer.app/makeNotification' 'ZoomMixer' '%s'"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-39",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
@@ -2202,7 +2240,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 160.0, 137.0, 36.0, 22.0 ],
+													"patching_rect" : [ 124.0, 155.0, 36.0, 22.0 ],
 													"text" : "sel 1"
 												}
 
@@ -2214,32 +2252,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 60.0, 137.0, 36.0, 22.0 ],
+													"patching_rect" : [ 32.0, 155.0, 39.0, 22.0 ],
 													"text" : "sel 0"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-36",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 275.0, 170.0, 211.0, 22.0 ],
-													"text" : "\"/Applications/Zoom Mixer.app/alert\" 0"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-32",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 39.0, 170.0, 211.0, 22.0 ],
-													"text" : "\"/Applications/Zoom Mixer.app/alert\" 1"
 												}
 
 											}
@@ -2277,35 +2291,35 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 85.0, 252.0, 30.0, 30.0 ]
+													"patching_rect" : [ 50.0, 309.0, 30.0, 30.0 ]
 												}
 
 											}
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
-													"destination" : [ "obj-58", 0 ],
-													"source" : [ "obj-32", 0 ]
+													"destination" : [ "obj-6", 0 ],
+													"source" : [ "obj-10", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-58", 0 ],
-													"source" : [ "obj-36", 0 ]
+													"destination" : [ "obj-6", 0 ],
+													"source" : [ "obj-14", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-32", 0 ],
+													"destination" : [ "obj-14", 0 ],
 													"source" : [ "obj-37", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-36", 0 ],
+													"destination" : [ "obj-10", 0 ],
 													"source" : [ "obj-38", 0 ]
 												}
 
@@ -2337,6 +2351,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-39", 1 ],
 													"source" : [ "obj-55", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-58", 0 ],
+													"source" : [ "obj-6", 0 ]
 												}
 
 											}
@@ -4827,7 +4848,7 @@
 									"allowdrag" : 0,
 									"fontsize" : 11.595186999999999,
 									"id" : "obj-28",
-									"items" : [ "Apple Extended USB Keyboard", ",", "Apple Extended USB Keyboard 2", ",", "USB Optical Mouse" ],
+									"items" : [ "Apple Extended USB Keyboard", ",", "USB Optical Mouse", ",", "Apple Extended USB Keyboard 2" ],
 									"labelclick" : 1,
 									"maxclass" : "umenu",
 									"numinlets" : 1,

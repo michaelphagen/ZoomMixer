@@ -2,6 +2,7 @@
 A Mixer for Zoom, built in MaxMSP, and intended to be used with Loopback or Soundflower.
 
 Currently development is only for MacOS (though feel free to try it on other platforms!)
+[Looking for the download? Click here](https://github.com/michaelphagen/ZoomMixer/releases)
 
 ## Relies on:
  [Jeremy Bernstein's Shell External MAX/MSP Object](https://github.com/jeremybernstein/shell) (if building from source)

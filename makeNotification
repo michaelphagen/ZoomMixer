@@ -1,4 +1,0 @@
-#/bin/bash
-# First Argument is the NotificationTitle, The second is the NotificationText  
-osascript -e "$(printf 'display notification "%s" with title "%s"' "$2" "$1")"
-exit
